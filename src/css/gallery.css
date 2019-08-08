@@ -64,11 +64,14 @@
   width: 800px;
   height: 80%;
   border: 1px solid rgba(0,0,0,0.3);
-  
+  padding-top: 20px;
+  box-shadow: 0px 0px 11px rgba(0,0,0,0.9);
   background: white;
   margin: 0px auto;
   border-radius: 4px;
   margin-top: 55px;
+  overflow: scroll;
+  position:relative;
 }
 .title {
   font-weight: 500;
@@ -114,4 +117,11 @@
   .gContent:hover {
     transition: all 400ms ease-in;
   }
+}
+
+@media screen and (max-width: 500px){
+  .galleryImages{
+    height: 90%;
+  }
+
 }

@@ -23,7 +23,6 @@
   outline: 0;
 }
 
-.Afterpay-logo{
-  width: 100%;
-  background-image: url("../AP.png")
+.AP-logo-wrap{
+  margin-top: 8px;
 }

@@ -5,7 +5,7 @@ import AP from "../AP.png"
 const NavHeader = props => {
   return (
     <nav className="navHeader">
-     <img src={AP} />
+      <div className="AP-logo-wrap"><img src={AP} /></div>
     </nav>
   );
 };
