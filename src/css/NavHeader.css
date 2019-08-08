@@ -1,0 +1,14 @@
+.navHeader{
+    width: 100%;
+    background: linear-gradient(#16A0D5,#074578);
+    height: 50px;
+}
+#magnify{
+    opacity: 0.55;
+    float: left;
+    position: absolute;
+    z-index: 11;
+    top: 70px;
+    left: calc(50% - 157px);
+    transform: scale(1.8);
+}

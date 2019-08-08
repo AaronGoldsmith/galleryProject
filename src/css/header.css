@@ -1,0 +1,25 @@
+.pageHead {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top:0;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right:0;
+  width: 100%;
+  z-index: 10;
+}
+.textRegion {
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  padding-top: 10px;
+  vertical-align: text-bottom;
+  position: relative;
+  text-align: center;
+  font-size: 2em;
+  height: 48px;
+  resize: none;
+
+  outline: 0;
+}

@@ -1,0 +1,12 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: table-row-group;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+#root .App {
+  margin: 0;
+  padding: 0;
+}
