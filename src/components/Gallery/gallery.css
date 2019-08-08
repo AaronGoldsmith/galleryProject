@@ -1,0 +1,134 @@
+#grid {
+  width: 100vw;
+}
+section#grid{
+  margin: 0px auto;
+  margin-top: 200px;
+}
+.title {
+  font-weight: 500;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 0;
+}
+.gridItem img{
+  width: 100%;
+}
+
+
+/* desktop only */
+@media screen and (min-width: 1700px) {
+  
+  .gContentWrap {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background: url("http://placehold.it/400x400") no-repeat center center;
+  }
+  .gContent:hover {
+    transition: all 400ms ease-in;
+  }
+  .gContentImg {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
+  }
+  .grid-content .gridItem {
+    background: white;
+    max-height: calc((100vw / 4) - 90px);
+    max-width: calc((100vw / 4) - 90px);
+  }
+
+
+  .wrapper{
+    max-width: 80%;
+    margin: 50px auto;
+    width: min-content;
+    margin: 0px auto;
+  }
+}
+.gContentImg{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.galleryImages{
+  height: 90%;
+}
+
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* grid-auto-rows: 160px; */
+  grid-auto-flow: row column;
+  width: min-content;
+  margin: 0px auto;
+}
+.gridItem {
+  margin: 12px auto;
+  grid-column: span 1;
+  width: calc(100% / 4)
+}
+
+.grid-content .gridItem {
+  background: white;
+  border-radius: 14px;
+  width: calc(100vw - 90px);
+  margin: 0px 12px; 
+  object-fit: cover;
+  max-width: 250px;
+}
+
+@media screen and (max-width: 996px) {
+  section#grid {
+    padding: 0px;
+    width: 100vw;
+  }
+  .wrapper{
+    grid-template-columns: repeat(3, 1fr); /* grid-auto-rows: 160px; */
+    transition: 1s all;
+  }
+}
+@media screen and (max-width: 830px){
+  .wrapper{
+    grid-template-columns: repeat(2, 1fr); /* grid-auto-rows: 160px; */
+    grid-gap: 10px;
+    transition: 1s all;
+
+  }
+  .wrapper .gridItem{
+    margin: 0px 42px;
+  }
+}
+@media screen and (max-width: 542px){
+  .wrapper{
+    grid-template-columns: repeat(1, 1fr); /* grid-auto-rows: 160px; */
+    transition: 1s all;
+
+    grid-gap: none;
+  }
+  .wrapper .gridItem{
+    margin: 0px 42px;
+    /* width: calc(80% - 100px) !important; */
+  }
+  .grid-content .gridItem{
+    max-width: unset;
+  }
+}
+
+
+/* mobile modal */
+@media screen and (max-width: 501px){
+  .galleryImages{
+    height: 90%;
+    width: unset !important;
+  }
+  #x{
+    top: 92px;
+  }
+}

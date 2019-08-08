@@ -1,14 +1,25 @@
 .navHeader{
     width: 100%;
-    background: linear-gradient(#16A0D5,#074578);
-    height: 50px;
+    background: #16A0D5;
+    height: 71px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 4px;
 }
 #magnify{
-    opacity: 0.55;
+    opacity: 0.45;
     float: left;
     position: absolute;
     z-index: 11;
-    top: 70px;
-    left: calc(50% - 157px);
+    top: 110px;
+    left: calc(50% - 142px);
     transform: scale(1.8);
+}
+.pageHead textarea::placeholder{
+    color: rgba(0,0,0,0.5);
+    font-size: 30px;
+}
+textarea{
+    font-family: 'Raleway', sans-serif
 }
