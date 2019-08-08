@@ -63,8 +63,12 @@
 .galleryImages {
   width: 800px;
   height: 80%;
+  border: 1px solid rgba(0,0,0,0.3);
+  
   background: white;
   margin: 0px auto;
+  border-radius: 4px;
+  margin-top: 55px;
 }
 .title {
   font-weight: 500;

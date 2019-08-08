@@ -1,10 +1,11 @@
 import React from "react";
 import "../css/NavHeader.css"
+import AP from "../AP.png"
 
 const NavHeader = props => {
   return (
     <nav className="navHeader">
-      Afterpay
+     <img src={AP} />
     </nav>
   );
 };

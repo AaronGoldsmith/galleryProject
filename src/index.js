@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <SearchHeader
-        useMag={key&&key.length>0}
+        useMag={key && key.length > 0}
         updateVal={input => { setKey(input) }}
       />
       <Modal showing={showModal} onClose={() => setModal(null)} />

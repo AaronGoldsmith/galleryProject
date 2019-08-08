@@ -20,6 +20,10 @@
   font-size: 2em;
   height: 48px;
   resize: none;
-
   outline: 0;
+}
+
+.Afterpay-logo{
+  width: 100%;
+  background-image: url("../AP.png")
 }

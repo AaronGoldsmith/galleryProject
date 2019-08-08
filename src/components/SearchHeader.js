@@ -7,6 +7,7 @@ const SearchHeader = props => {
   return (
     <div className="pageHead">
       <NavHeader />
+      {/* SHOW magnifying glass */}
      {!props.useMag && <Mag />}
       <textarea
         className="textRegion"
