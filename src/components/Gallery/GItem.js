@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/gallery.css";
-const GItem = props => {
+import "./gallery.css";
+export const GItem = props => {
   return (
     <div className="gItem" id={props.label} onClick={props.handleClick}>
       <div className="gContentWrap">
@@ -14,4 +14,3 @@ const GItem = props => {
     </div>
   );
 };
-export default GItem;

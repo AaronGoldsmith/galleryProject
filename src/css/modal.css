@@ -47,10 +47,12 @@
   margin: -12px auto;
   padding-bottom: 50px;
 }
+.descr{
+  margin-top: -12px;
+}
 
 @media screen and (max-width: 500px){
    .modalTitle{
-     margin-left: 0px;
      margin-top: 22px;
      text-align: center;
    }

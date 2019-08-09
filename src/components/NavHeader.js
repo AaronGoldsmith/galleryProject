@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/NavHeader.css"
-import AP from "../AP.png"
+import AP from "../AP-white.svg"
 
 const NavHeader = props => {
   return (

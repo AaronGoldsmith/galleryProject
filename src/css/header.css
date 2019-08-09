@@ -1,5 +1,6 @@
 .pageHead {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px rgba(255,255,255,0.9);
   position: fixed;
   top:0;
   width: 100%;
@@ -20,9 +21,13 @@
   font-size: 2em;
   height: 48px;
   resize: none;
+  padding-top: 28px;
+  padding-bottom: 19px;
   outline: 0;
 }
 
 .AP-logo-wrap{
-  margin-top: 8px;
+  margin: 0px auto;
+  margin-top: 23px;
+  width: 183px;
 }

@@ -14,12 +14,12 @@ const Modal = props =>
           <div>
               <img src="https://via.placeholder.com/250 " /> 
               <p>Pre-fix</p>
-              <p><em>Add your description here</em></p>
+              <p className="descr"><em>Add your description here</em></p>
           </div>
           <div>
             <img src="https://via.placeholder.com/250 " />
             <p>Post-fix</p>
-            <p><em>Add your description here</em></p>
+            <p className="descr"><em>Add your description here</em></p>
 
           </div>
           

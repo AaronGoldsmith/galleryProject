@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
-import GItem from "./GItem";
+import {GItem} from "./GItem";
+
 class GList extends React.Component {
   constructor(props) {
     super(props);
@@ -31,7 +32,7 @@ class GList extends React.Component {
   render() {
     const { showData } = this.state;
     return (
-      <div className="gContainer">
+      <div className="gContainer" onScroll={this.handleScroll}>
         {showData
           ? showData.map((item, i) => {
               return (

@@ -2,7 +2,7 @@
   margin: 0px auto;
   text-align: center;
   position: relative;
-  top: 122px;
+  top: 229px;
 }
 .gDescr {
   text-align: left;
@@ -69,7 +69,7 @@
   background: white;
   margin: 0px auto;
   border-radius: 4px;
-  margin-top: 55px;
+  margin-top: 95px;
   overflow: scroll;
   position:relative;
 }
@@ -84,8 +84,7 @@
 @media screen and (max-width: 680px) {
   .gContentWrap {
     display: block;
-    min-width: 180px;
-    background: url("http://placehold.it/200x200") no-repeat center center;
+    width: unset !important;
   }
   .gContainer {
     display: grid;
