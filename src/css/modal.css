@@ -7,18 +7,19 @@
   left: 0;
   top: 0;
   z-index: 99;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   text-align: center;
 }
 #x {
   color: black;
   font-size: 2em;
-  right: 12px;
-  top: 12px;
-  position: absolute;
-  cursor: pointer;
+  position: initial;
+  text-align: right;
+  float:right;
+  margin-right: 25px;
   margin-top: -22px;
+
 }
 .modalItem.noScroll {
   overflow: hidden;
@@ -53,8 +54,7 @@
 
 
 .galleryImages {
-  width: 800px;
-  height: 80%;
+  width: 671px;
   border: 1px solid rgba(0,0,0,0.3);
   padding-top: 20px;
   box-shadow: 0px 0px 11px rgba(0,0,0,0.9);
@@ -63,7 +63,6 @@
   border-radius: 4px;
   margin-top: 95px;
   overflow: scroll;
-  position:relative;
 }
 #code-section{
   background: rgba(151, 150, 52, 0.452);
@@ -83,19 +82,23 @@
   }
   .screenshot-images{
       display: inline-grid;
-      position: absolute;
       left: 0;
       width: 100vw;
+      min-height: 800px;
   }
   #x{
    color: black;
-   top: -3px;
+   position: initial;
+   text-align: right;
+   margin-right: 25px;
+   /* margin-top: 100px; */
+   /* margin-top: -22px; */
    font-size: 2em;
   }
 
   .galleryImages {
     width: unset;
-    height: 90%;
+    height: 100%;
   }
 }
 
