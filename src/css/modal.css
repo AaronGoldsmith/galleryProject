@@ -51,20 +51,79 @@
   margin-top: -12px;
 }
 
+
+.galleryImages {
+  width: 800px;
+  height: 80%;
+  border: 1px solid rgba(0,0,0,0.3);
+  padding-top: 20px;
+  box-shadow: 0px 0px 11px rgba(0,0,0,0.9);
+  background: white;
+  margin: 0px auto;
+  border-radius: 4px;
+  margin-top: 95px;
+  overflow: scroll;
+  position:relative;
+}
+#code-section{
+  background: rgba(151, 150, 52, 0.452);
+  height: 200px;
+  border-radius: 4px;
+  width: 70%;
+  margin: 0px auto;
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/lined_paper.png') repeat;
+  opacity: 0.8;
+}
+
 @media screen and (max-width: 500px){
-   .modalTitle{
-     margin-top: 22px;
-     text-align: center;
-   }
-   .screenshot-images{
-       display: inline-grid;
-       position: absolute;
-       left: 0;
-       width: 100vw;
-   }
-   #x{
-    color: black;
-    top: -3px;
-    font-size: 2em;
-   }
+  .modalTitle{
+    margin-top: 22px;
+    text-align: center;
+  }
+  .screenshot-images{
+      display: inline-grid;
+      position: absolute;
+      left: 0;
+      width: 100vw;
+  }
+  #x{
+   color: black;
+   top: -3px;
+   font-size: 2em;
+  }
+
+  .galleryImages {
+    width: unset;
+    height: 90%;
+  }
+}
+
+.showText{
+  visibility: visible;
+}
+.hideText{
+  visibility: hidden;
+}
+.copyText{
+  font-size: 0.6em;
+  position: relative;
+  background: rgba(0,0,0,0.8);
+  border: white;
+  padding: 4px;
+  border-radius: 4px;
+  color: white;
+}
+
+.copyText:hover{
+  cursor:pointer;
+}
+code{
+  font-family: monospace;
+}
+.copySVG{
+  cursor:pointer;
+}
+#copy-code-section{
+  text-justify: newspaper;
 }

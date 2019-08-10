@@ -1,7 +1,7 @@
 .navHeader{
     width: 100%;
     background: #16A0D5;
-    height: 80px;
+    height: 71px;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -12,7 +12,7 @@
     float: left;
     position: absolute;
     z-index: 11;
-    top: 120px;
+    top: 110px;
     left: calc(50% - 142px);
     transform: scale(1.8);
 }

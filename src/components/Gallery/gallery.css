@@ -1,84 +1,18 @@
-.gContainer {
+#grid {
+  width: 100vw;
+}
+section#grid{
   margin: 0px auto;
-  text-align: center;
-  position: relative;
-  top: 229px;
-}
-.gDescr {
-  text-align: left;
-  margin: 10px 20px;
-  position: absolute;
-  bottom: 0px;
-}
-.gContentImg {
-  max-width: 220px;
-  max-height: 220px;
-  width: 100%;
-  border-radius: 4px;
-  height: auto !important;
-  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
-}
-.gContentWrap {
-  height: 170px;
-  width: 180px;
-  margin: 10px;
-  margin: 0px auto;
-  border-radius: 4px;
-  object-fit: contain;
-  object-position: 50% 50%;
-  position: relative;
-}
-.gItem {
-  width: auto;
-  height: auto;
-
-  margin: 20px;
-  display: inline-block;
-}
-.gContentImg:hover{
-  box-shadow: 0px 0px 1px 3px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 200ms ease-in-out;
-}
-.gContentWrap:hover {
-  opacity: 0.8;
-}
-.gItem p {
-  color: black;
-  position: relative;
-  text-align: left;
-  padding: 9px 0px;
-  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
-  width: 100%;
-  max-width: 170px;
-  border-radius: 4px;
-  bottom: 0px;
-  height: 32px;
-  margin: 4px 0px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 13px;
-}
-.galleryImages {
-  width: 800px;
-  height: 80%;
-  border: 1px solid rgba(0,0,0,0.3);
-  padding-top: 20px;
-  box-shadow: 0px 0px 11px rgba(0,0,0,0.9);
-  background: white;
-  margin: 0px auto;
-  border-radius: 4px;
-  margin-top: 95px;
-  overflow: scroll;
-  position:relative;
+  margin-top: 200px;
 }
 .title {
   font-weight: 500;
   font-family: "Source Sans Pro", sans-serif;
   text-transform: capitalize;
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 680px) {
@@ -96,31 +30,94 @@
 }
 
 /* desktop only */
-@media screen and (min-width: 2300px) {
+@media screen and (min-width: 1700px) {
   .gContainer {
     width: 1700px;
-  }
-  .gItem {
-    border-radius: 4px;
-    margin: 100px 80px;
-    width: 400px;
-    height: 400px;
   }
   .gContentWrap {
     width: 100%;
     height: 100%;
     margin: 0px;
-    background-size: cover;
     background: url("http://placehold.it/400x400") no-repeat center center;
   }
   .gContent:hover {
     transition: all 400ms ease-in;
   }
+  .gContentImg {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
+  }
+  .grid-content .gridItem {
+    background: white;
+    max-height: calc((100vw / 4) - 90px);
+    max-width: calc((100vw / 4) - 90px);
+  }
+  .wrapper{
+    max-width: 80%;
+    margin: 50px auto;
+  }
+}
+.gContentImg{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.galleryImages{
+  height: 90%;
 }
 
-@media screen and (max-width: 500px){
+
+
+.wrapper {
+  display: grid;
+  /* grid-gap: 10px; */
+  grid-template-columns: repeat(4, 1fr); /* grid-auto-rows: 160px; */
+  grid-auto-flow: row column;
+}
+.gridItem {
+  padding: 20px;
+  margin: 0px auto;
+  grid-column: span 1;
+}
+
+.grid-content .gridItem {
+  background: white;
+  border-radius: 14px;
+  width: 100%;
+  object-fit: cover;
+  max-width: 200px !important;
+  max-height: 200px !important;
+}
+
+@media screen and (max-width: 680px) {
+  section#grid {
+    padding: 0px;
+    width: 100vw;
+  }
+  /* .wrapper{
+    grid-template-columns: repeat() !important;
+  } */
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: none;
+    margin: 25px;
+  }
+  .grid-content .gridItem {
+    height: calc(100vw - 90px);
+    width: calc(100vw - 90px);
+    margin: 0px auto;
+  }
+}
+
+
+/* mobile modal */
+@media screen and (max-width: 501px){
   .galleryImages{
     height: 90%;
   }
-
 }

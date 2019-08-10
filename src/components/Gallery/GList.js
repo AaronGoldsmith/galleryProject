@@ -32,20 +32,22 @@ class GList extends React.Component {
   render() {
     const { showData } = this.state;
     return (
-      <div className="gContainer" onScroll={this.handleScroll}>
-        {showData
-          ? showData.map((item, i) => {
-              return (
-                <GItem
-                  key={i}
-                  label={item.title}
-                  src={item.thumbnailUrl}
-                  handleClick={this.props.openModal}
-                />
-              );
-            })
-          : null}
-      </div>
+      <section id="grid">
+        <div className="grid-content wrapper" onScroll={this.handleScroll}>
+          {showData
+            ? showData.map((item, i) => {
+                return (
+                  <GItem
+                    key={i}
+                    label={item.title}
+                    src={item.thumbnailUrl}
+                    handleClick={this.props.openModal}
+                  />
+                );
+              })
+            : null}
+        </div>
+      </section>
     );
   }
 }

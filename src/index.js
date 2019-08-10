@@ -4,6 +4,7 @@ import GList from "./components/Gallery/GList";
 import Modal from "./components/Modal";
 
 import SearchHeader from "./components/SearchHeader";
+
 import "./styles.css"
 function App() {
   const [showModal, setModal] = useState(false);
