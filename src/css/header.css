@@ -11,7 +11,8 @@
   z-index: 10;
 }
 .textRegion {
-  border: none;
+  border: none !important;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
   box-shadow: none;
   width: 100%;
   padding-top: 10px;

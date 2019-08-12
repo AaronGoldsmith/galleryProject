@@ -1,0 +1,47 @@
+.customBtn {
+  border: 1px solid #0745782d;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  background: white;
+  margin: 10px;
+  border-radius: 4px;
+  width: 144px;
+  height: 40px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 200;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 60ms background-color ease-in-out;
+}
+.blankSpace{
+  width: 100%;
+  background: white;
+  height: 50px;
+  border-top: 1px solid rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 8px 10px white;
+}
+.filterButton{
+  position: absolute;
+  width: 100%;
+  top: 150px;
+}
+.customBtn #tagLabel {
+  color: #25364c;
+  font-weight: 600;
+}
+.customBtn:focus {
+  border: 1px solid #ede466;
+}
+
+.customBtn:hover,
+.customBtn.active {
+  background: #ede466;
+  border: 1px solid rgb(220, 213, 118);
+  box-shadow: 0px 3px 5px rgb(220, 213, 118, 0.1);
+  box-shadow: none;
+}
+.customBtn.off {
+  background: white;
+}
+.customBtn.off:hover {
+  /* background: rgba(220, 213, 118, 0.2); */
+}

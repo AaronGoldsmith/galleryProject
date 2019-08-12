@@ -1,6 +1,7 @@
 import React from "react";
 import NavHeader from "./NavHeader";
-import {Mag} from "./SVG/Mag"
+import { Mag } from "./SVG/Mag"
+import {ButtonController} from "./Controllers/ButtonController";
 import "../css/header.css";
 
 const SearchHeader = props => {
@@ -9,13 +10,16 @@ const SearchHeader = props => {
       <NavHeader />
 
       {/* SHOW magnifying glass */}
-     {!props.useMag && <Mag />}
+      {!props.useMag && <Mag />}
       <textarea
         className="textRegion"
         placeholder={"Search Projects"}
         onChange={e => props.updateVal(e.currentTarget.value)}
       />
-       </div>
+      
+      <ButtonController labels={["Merchants", "Themes", "Tags", "All results"]} />
+      <div className="blankSpace"></div>
+    </div>
   );
 };
 export default SearchHeader;

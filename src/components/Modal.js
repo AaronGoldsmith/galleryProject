@@ -22,12 +22,12 @@ const Modal = props => {
   }
 
   return (
-    props.showing && (
-    <div className={`modalItem ${props.scrollable ? "" : "noScroll"}`} >
+    
+    <div className={`modalItem ${props.scrollable ? "" : "noScroll"} ${props.showing ?'show':'hide'} `} >
       <div className="galleryImages" >
+      <span id="x" onClick={props.onClose} > &times; </span>
 
         <div className="screenshot-images" >
-          <span id="x" onClick={props.onClose} > &times; </span>
           <h2 className="modalTitle"> {props.showing} </h2>
 
 
@@ -53,6 +53,6 @@ const Modal = props => {
         </div>
       </div>
     </div>
-  ));
+  );
 }
 export default Modal;
