@@ -33,12 +33,12 @@ const Modal = props => {
 
 
           <div>
-              <img src="https://via.placeholder.com/250 " /> 
+              <img src="https://via.placeholder.com/250 " alt="test 250" /> 
               <p>Pre-fix</p>
               <p className="descr"><em>Add your description here</em></p>
           </div>
           <div>
-            <img src="https://via.placeholder.com/250 " />
+            <img src="https://via.placeholder.com/250 " alt=""/>
             <p>Post-fix</p>
             <p className="descr"><em>Add your description here</em></p>
           </div>

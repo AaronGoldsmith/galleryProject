@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import GList from "./components/Gallery/GList";
 import Modal from "./components/Modal";
 
-import SearchHeader from "./components/SearchHeader";
+import {SearchHeader} from "./components/SearchHeader";
 
 import "./styles.css"
 function App() {
