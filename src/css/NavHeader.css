@@ -12,7 +12,7 @@
     float: left;
     position: absolute;
     z-index: 11;
-    top: 110px;
+    top: 117px;
     left: calc(50% - 142px);
     transform: scale(1.8);
 }

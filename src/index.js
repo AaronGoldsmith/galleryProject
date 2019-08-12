@@ -8,7 +8,9 @@ import {SearchHeader} from "./components/SearchHeader";
 import "./styles.css"
 function App() {
   const [showModal, setModal] = useState(false);
+ 
   const [key, setKey] = useState(null);
+
   return (
     <div className="App">
       <SearchHeader
@@ -16,6 +18,7 @@ function App() {
         updateVal={input => { setKey(input) }}
       />
       <Modal showing={showModal} onClose={() => setModal(null)} />
+      
       <GList
         searchKey={key}
         openModal={e => {

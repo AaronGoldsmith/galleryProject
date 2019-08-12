@@ -3,7 +3,7 @@
 }
 section#grid{
   margin: 0px auto;
-  margin-top: 250px;
+  margin-top: 280px;
 }
 .title {
   font-weight: 500;
@@ -126,7 +126,7 @@ section#grid{
   }
   .wrapper .gridItem{
     margin: 0px 42px;
-    width: calc(100% / 3)
+    width: calc(100% / 2)
   }
   .grid-content .gridItem{
     max-width: unset;

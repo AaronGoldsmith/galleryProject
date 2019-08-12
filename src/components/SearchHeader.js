@@ -6,8 +6,9 @@ import "../css/header.css";
 
 const labels = ["All results", "Merchants", "Themes", "Tags"];
 export const SearchHeader = (props) => {
+
   return (
-    <div className="pageHead">
+    <div className="pageHead" >
 
       <NavHeader />
       {!props.useMag && <Mag />}
@@ -19,5 +20,6 @@ export const SearchHeader = (props) => {
 
       <ButtonController labels={labels} />
       <div className="blankSpace" />
+      
     </div>)
 }
