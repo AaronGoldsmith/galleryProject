@@ -1,8 +1,8 @@
 export default {
-    apiKey: "AIzaSyBG60vXsc4gWWqPFFFB6MeDaSCuLHdOJus",
+    apiKey: `${process.env.REACT_APP_API}`,
     discoveryDocs: 
       ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
-    spreadsheetId: "1GCojJDYutm9jpwb3XjIOfha1-7GZrba2LUZLjU3HzA0",
+    spreadsheetId: `${process.env.REACT_APP_ID}`,
     scope:'https://www.googleapis.com/auth/spreadsheets.readonly'
   };
   
